@@ -1,0 +1,16 @@
+.intro-block {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: $block-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(xl, 8);
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+}
