@@ -144,9 +144,9 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: inherit;
   background-color: transparent;
-  transition: color 0.3s;
+  transition: color $transition-time;
 
   &:hover,
   &:focus {
@@ -323,6 +323,13 @@ a {
   }
 }
 
+.main {
+
+  & > *:last-child {
+    padding-bottom: 96px;
+  }
+}
+
 // Swiper & controls
 .swiper-wrapper,
 .swiper-slide {
@@ -332,6 +339,24 @@ a {
 .swiper-button-prev,
 .swiper-button-next {
   position: static;
+  width: 56px;
+  height: 56px;
+  color: $title-color;
+  border-radius: $border-radius;
+  background-color: $block-bg;
+  opacity: 1;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $link-color--hover;
+  }
+
+  &::after {
+    font-size: 12px;
+    font-weight: 900;
+  }
 }
 
 // -------- Colors start ----------

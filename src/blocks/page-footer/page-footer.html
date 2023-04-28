@@ -1,11 +1,71 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer">
-  page-footer
+<footer class="container  page-footer">
+  <div class="row">
+
+    <div class="page-footer__logo-col">
+      <a href="index.html" class="logo" title="Energy Transparency Index">
+        <img src="img/energy-transparency-index-logo.svg" alt="Energy Transparency Index logo" width="160" height="40">
+      </a>
+    </div>
+
+    <div class="page-footer__contacts-col">
+      <section class="page-footer__contacts">
+        <h2 class="visually-hidden">Contacts</h2>
+        <ul class="list-nostyled  page-footer__contacts-list">
+          <li class="page-footer__contacts-item">
+            <a href="#" class="page-footer__contacts-link" target="_blank" rel="nofollow noopener">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#index-ukraine"></use></svg>
+              Energy Transparency Index of Ukraine
+            </a>
+          </li>
+          <li class="page-footer__contacts-item">
+            <a href="mailto:author@dixigroup.org" class="page-footer__contacts-link">
+              <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#email"></use></svg>
+              author@dixigroup.org
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="page-footer__sponsors-col">
+      <section class="page-footer__sponsors">
+        <h2 class="visually-hidden">Sponsors/Partners ? </h2>
+        <ul class="list-nostyled  page-footer__sponsors-list">
+          <li class="page-footer__sponsors-item">
+            <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Sponsor's Name</span>
+              <img src="img/feu-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">
+            </a>
+          </li>
+          <li class="page-footer__sponsors-item">
+            <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Sponsor's Name</span>
+              <img src="img/bst-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">
+            </a>
+          </li>
+          <li class="page-footer__sponsors-item">
+            <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Sponsor's Name</span>
+              <img src="img/dixi-group-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="page-footer__text-col">
+      <p class="page-footer__text">
+        This website is made possible by the support of the American people through the United States Agency for International Development (USAID). The contents are the sole responsibility of DiXi Group and do not necessarily reflect the views of USAID or the United States Government.
+      </p>
+    </div>
+
+    <div class="page-footer__copyrights-col">
+      @@include('../../blocks/copyrights/copyrights.html')
+    </div>
+
+  </div>
 </footer>

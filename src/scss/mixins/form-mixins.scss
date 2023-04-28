@@ -44,10 +44,10 @@
 
 @mixin field-help-text {
   display: block;
-  padding-top: 0.4em;
+  padding-top: 4px;
   font-size: $font-size-sm;
   line-height: 1.2em;
-  color: $text-muted;
+  color: $color-danger;
 
   &:empty { // stylelint-disable-line
     display: none;
@@ -57,7 +57,8 @@
 
 @mixin field-focus {
   outline: 0;
-  box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  color: $title-color;
+  box-shadow: 0 0 0 1px rgba($color-main, $opacity);
 }
 
 

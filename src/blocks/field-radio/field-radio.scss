@@ -3,13 +3,13 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   &__title {
     display: block;
     margin-bottom: 16px;
     line-height: $line-height;
-    font-weight: 500;
+    //font-weight: 500;
     color: $title-color;
   }
 
@@ -56,10 +56,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid $border-color;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $divider-color;
+      background-color: $white;
       border-radius: 50%;
+      transition: all $transition-time;
+    }
+
+    @at-root input:checked ~ &::before  {
+      border-color: $main-color;
+      background-color: $main-color;
     }
 
     @at-root input:focus ~ &::before {
@@ -69,13 +76,13 @@
     &::after {
       content: '';
       position: absolute;
-      top: 5px;
-      left: 5px;
-      width: 12px;
-      height: 12px;
-      opacity: 0;
+      top: 7px;
+      left: 7px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
-      background-color: $border-color;
+      opacity: 0;
+      background-color: $white;
       transition: opacity $transition-time;
 
       @at-root input:checked ~ & {
@@ -94,7 +101,7 @@
 
     &:focus,
     &:active {
-      @include field-focus;
+      //@include field-focus;
     }
 
     // сокрытие инпута в случае использования своей радиокнопки
