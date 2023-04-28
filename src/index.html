@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8">
@@ -17,7 +17,7 @@
 
       <main class="main">
 
-        <section class="container  intro-block">
+        <div class="container  intro-block">
           <div class="row">
             <div class="intro-block__col">
               <h1 class="intro-block__title">About Index</h1>
@@ -29,36 +29,67 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         @@include('blocks/country-slider/country-slider.html')
 
+        <div class="container  download-index__wrapper" style="background-color:#f5f5f5;">
+          @@include('blocks/download-index/download-index.html')
+        </div>
 
-        <section class="container  intro-block">
-          <div class="row">
-            <div class="intro-block__col">
-              <h1 class="intro-block__title">About Index</h1>
-              <div class="intro-block__text">
-                <p>Is a tool for policymakers to compare national policy frameworks for sustainable energy and identify opportunities to attract investment. Assesses countries’ policy support for each of the three pillars of sustainable energy – access to electricity, access to clean cooking (for 55 access-deficit countries), energy efficiency, and renewable energy.</p>
-              </div>
-              <div class="intro-block__link-wrapper">
-                <a href="#" class="btn"><span>Read About Us</span></a>
-              </div>
-            </div>
-          </div>
+        <section class="container  global-map" style="min-height: 200px;">
+          <h2 class="visually-hidden">Общий индекс по странам на карте мира</h2>
+
+          <img src="img/world-map.jpg" alt="">
         </section>
 
-        <section class="container  intro-block">
+        @@include('blocks/donors/donors.html')
+
+        <section class="container  donors">
+          <h2 class="donors__title">Partners</h2>
           <div class="row">
-            <div class="intro-block__col">
-              <h1 class="intro-block__title">About Index</h1>
-              <div class="intro-block__text">
-                <p>Is a tool for policymakers to compare national policy frameworks for sustainable energy and identify opportunities to attract investment. Assesses countries’ policy support for each of the three pillars of sustainable energy – access to electricity, access to clean cooking (for 55 access-deficit countries), energy efficiency, and renewable energy.</p>
-              </div>
-              <div class="intro-block__link-wrapper">
-                <a href="#" class="btn"><span>Read About Us</span></a>
-              </div>
+
+            <div class="donors__col  donors__col--partners">
+              <a href="#" class="donors__item  donors__item--partners" title="Donor's name" target="_blank" rel="nofollow noopener">
+                <!-- Образец для шаблона -->
+                <picture>
+                  <source srcset="img/weg.webp, img/weg.webp 2x" media="(min-width: 360px)" type="image/webp">
+                  <source srcset="img/weg.png, img/weg.png 2x" media="(min-width: 360px)">
+                  <img src="img/weg.png" alt="Weg" loading="lazy" style="mix-blend-mode: darken;">
+                </picture>
+              </a>
             </div>
+
+            <div class="donors__col  donors__col--partners">
+              <span class="donors__item  donors__item--partners">
+                <picture>
+                  <source srcset="img/watch.webp" media="(min-width: 360px)" type="image/webp">
+                  <source srcset="img/watch.png" media="(min-width: 360px)">
+                  <img src="img/watch.png" alt="Weg" loading="lazy" style="mix-blend-mode: darken;">
+                </picture>
+              </span>
+            </div>
+
+            <div class="donors__col  donors__col--partners">
+              <a href="#" class="donors__item  donors__item--partners" title="Donor's name" target="_blank" rel="nofollow noopener">
+                <picture>
+                  <source srcset="img/expert.webp" media="(min-width: 360px)" type="image/webp">
+                  <source srcset="img/expert.png" media="(min-width: 360px)">
+                  <img src="img/expert.png" alt="Weg" loading="lazy" style="mix-blend-mode: darken;">
+                </picture>
+              </a>
+            </div>
+
+            <div class="donors__col  donors__col--partners">
+              <a href="#" class="donors__item  donors__item--partners" title="Donor's name" target="_blank" rel="nofollow noopener">
+                <picture>
+                  <source srcset="img/weg.webp" media="(min-width: 360px)" type="image/webp">
+                  <source srcset="img/weg.png" media="(min-width: 360px)">
+                  <img src="img/weg.png" alt="Weg" loading="lazy" style="mix-blend-mode: darken;">
+                </picture>
+              </a>
+            </div>
+
           </div>
         </section>
 

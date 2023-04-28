@@ -3,13 +3,13 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   &__title {
     display: block;
     margin-bottom: 16px;
     line-height: $line-height;
-    font-weight: 500;
+    //font-weight: 500;
     color: $title-color;
   }
 
@@ -47,13 +47,14 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 22px;
-      height: 22px;
-      border: 1px solid $border-color;
-      border-radius: $border-radius / 2;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $divider-color;
+      border-radius: $border-radius;
 
       @at-root input:checked ~ & {
-        background-color: $border-color;
+        background-color: $link-color;
+        border-color: $link-color;
       }
     }
 
@@ -64,13 +65,13 @@
     &::after {
       content: '';
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 6px;
+      left: 6px;
       width: 12px;
       height: 8px;
       opacity: 0;
-      border-left: 2px solid $white;
-      border-bottom: 2px solid $white;
+      border-left: 2.5px solid $white;
+      border-bottom: 2.5px solid $white;
       transform: rotate(-45deg);
       transition: opacity $transition-time;
 

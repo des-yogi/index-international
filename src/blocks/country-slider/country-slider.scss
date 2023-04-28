@@ -9,21 +9,10 @@
     margin-bottom: 24px;
   }
 
-  &__container {
-
-  }
-
-  &__slide {
-
-  }
-
   &__country-col {
     @include col(xs, 12);
     @include col(xl, 4);
     margin-bottom: 24px;
-
-    // @media (max-width: $screen-xl - 1) {
-    // }
   }
 
   &__indexes-col {
@@ -36,8 +25,12 @@
     border-radius: $border-radius;
     overflow: hidden;
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-md) {
       display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-xl) {
       flex-direction: column;
       height: 100%;
     }
@@ -45,17 +38,20 @@
 
   &__flag-wrapper {
 
+    @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+      flex: 1 1 50%;
+    }
   }
 
   &__flag-col {
     @include col(xs, 5);
-    @include col(md, 3);
+    @include col(md, 4);
     @include col(xl, 4.5);
   }
 
   &__flag-text-col {
     @include col(xs, 7);
-    @include col(md, 9);
+    @include col(md, 8);
     @include col(xl, 7.5);
     display: flex;
     align-items: center;
@@ -93,6 +89,10 @@
   &__score {
     padding: 16px;
 
+    @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+      flex: 1 1 50%;
+    }
+
     @media (min-width: $screen-xl) {
       flex: 1 1 auto;
       padding: 24px;
@@ -108,10 +108,6 @@
     margin-top: 0;
     font-size: $font-size-lg;
     font-weight: 600;
-  }
-
-  &__indexes {
-
   }
 
   &__index-card-col {
@@ -156,10 +152,6 @@
         font-size: $font-size-sm;
       }
     }
-  }
-
-  &__controls {
-
   }
 
   &__controls {

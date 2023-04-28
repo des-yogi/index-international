@@ -52,4 +52,11 @@
       padding-top: percentage(1 / 1);
     }
   }
+
+  &--index-img {
+
+    &::before {
+      padding-top: percentage(378 / 326);
+    }
+  }
 }

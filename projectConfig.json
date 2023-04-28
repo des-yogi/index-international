@@ -26,7 +26,9 @@
     "donors": [],
     "partners": [],
     "copyrights": [],
-    "modal-form": []
+    "modal-form": [],
+    "faq": [],
+    "article": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

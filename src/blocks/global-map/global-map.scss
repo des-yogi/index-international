@@ -1,8 +1,6 @@
-// В этом файле должны быть стили для БЭМ-блока global-map, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .global-map {
+  padding-top: 64px;
+  padding-bottom: 64px;
 
   $block-name:                &; // #{$block-name}__element
 
