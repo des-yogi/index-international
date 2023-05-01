@@ -95,3 +95,15 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   };
   burger.addEventListener('click', burgerToggleHandler);
 })();
+
+(function () {
+  //var imgArrowArr = document.querySelectorAll('.arrowContainer img');
+  //Array.prototype.forEach.call(imgArrowArr, function (item) {
+    // if (item.classList.contains('active')) {
+    //   arrow.setAttribute('aria-current', 'page');
+    // }
+    // else {
+    //   arrow.removeAttribute('aria-current');
+    // }
+  //});
+})();
