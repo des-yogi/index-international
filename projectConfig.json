@@ -28,7 +28,11 @@
     "copyrights": [],
     "modal-form": [],
     "faq": [],
-    "article": []
+    "article": [],
+    "analitics": [],
+    "analitics-btn": [],
+    "indicators": [],
+    "methodology": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
