@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
-
 <head>
   <meta charset="utf-8">
   <title>Indicators page</title>
-  @@include('_include/page_head.html')
-</head>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <meta name="MobileOptimized" content="360">  <meta name="format-detection" content="telephone=no">  <meta name="format-detection" content="date=no">  <meta name="format-detection" content="address=no">  <meta name="format-detection" content="email=no">  <meta name="description" content>  <meta name="keywords" content>  <meta name="robots" content="index,follow">  <!-- OpenGraph microdata  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />  <meta property="og:type"          content="website" />  <meta property="og:title"         content="Your Website Title" />  <meta property="og:description"   content="Your description" />  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />  <meta property="og:locale"        content="uk_UA" />  -->  <!-- <link rel="canonical" href="https://www.your-domain.com/"> -->  <!-- <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/roboto-v18-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="assets/fonts/noto-sans-v7-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;800&display=swap" rel="stylesheet">  <link href="css/style.min.css" rel="stylesheet" media="screen"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
-
   <div class="page__inner">
-
-    <div class="page__content">
-      @@include('blocks/page-header/page-header.html')
-
-      <main class="main">
-
+    <div class="page__content">      <header class="container  page-header  page-header--sticky">        <div class="page-header__inner">          <a href="index.html" class="logo" title="Energy Transparency Index">            <img src="img/energy-transparency-index-logo.svg" alt="Energy Transparency Index logo" width="160" height="40">          </a>          <!--DEV          @ @include('blocks/burger/burger.html')          <div class="burger  burger--close"><span></span></div>          -->          <button id="burger" class="burger" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" aria-label="Переключатель моб. меню">            <span></span>          </button>        </div>        <div id="collapseMenu" class="page-header__nav-wrapper  collapse">          <button class="btn  page-header__download" data-bs-toggle="modal" data-bs-target="#formModal">            <span>Download Indicators</span>          </button>          <!--DEV
+          @ @include('blocks/main-nav/main-nav.html')
+          -->
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item  active">
+                <a href="about.html" class="main-nav__link">
+                  About Index
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="analytics.html" class="main-nav__link">
+                  Analytics
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="indicators.html" class="main-nav__link">
+                  Indicators
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="methodology.html" class="main-nav__link">
+                  Methodology
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="reports.html" class="main-nav__link">
+                  Reports
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-404.html" class="main-nav__link">
+                  404
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>      </header>      <main class="main">
         <article class="article  indicators">
-
           <div class="container  intro-block">
             <div class="row">
               <div class="intro-block__col">
@@ -34,89 +69,18 @@
                     <span class="visually-hidden">Sort by year controls</span>
                     <span role="presentation">Date:</span>
                   </h3>
-                  <div class="analitics-btn__wrapper" aria-labelledby="parent-name-01">
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "year2",
-                      "label": "2023",
-                      "displayFlag": 'display:none;',
-                      "checked": "checked"
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "year2",
-                      "label": "2022",
-                      "displayFlag": 'display:none;',
-                      "checked": ""
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "year2",
-                      "label": "2021",
-                      "displayFlag": 'display:none;',
-                      "checked": ""
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "year2",
-                      "label": "2020",
-                      "displayFlag": 'display:none;',
-                      "checked": ""
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "year2",
-                      "label": "2019",
-                      "displayFlag": 'display:none;',
-                      "checked": ""
-                    })
-                  </div>
+                  <div class="analitics-btn__wrapper" aria-labelledby="parent-name-01">                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="year2-2023" type="radio" name="year2" value checked>                      <label class="analitics-btn__label  btn" for="year2-2023">                        <span class="analitics-btn__flag" aria-hidden="true" style="display:none;">                          <img src="img/@@flagName.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">2023</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="year2-2022" type="radio" name="year2" value>                      <label class="analitics-btn__label  btn" for="year2-2022">                        <span class="analitics-btn__flag" aria-hidden="true" style="display:none;">                          <img src="img/@@flagName.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">2022</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="year2-2021" type="radio" name="year2" value>                      <label class="analitics-btn__label  btn" for="year2-2021">                        <span class="analitics-btn__flag" aria-hidden="true" style="display:none;">                          <img src="img/@@flagName.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">2021</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="year2-2020" type="radio" name="year2" value>                      <label class="analitics-btn__label  btn" for="year2-2020">                        <span class="analitics-btn__flag" aria-hidden="true" style="display:none;">                          <img src="img/@@flagName.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">2020</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="year2-2019" type="radio" name="year2" value>                      <label class="analitics-btn__label  btn" for="year2-2019">                        <span class="analitics-btn__flag" aria-hidden="true" style="display:none;">                          <img src="img/@@flagName.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">2019</span>                      </label>                    </div>                  </div>
                 </section>
-
                 <section class="analitics-btn__controls">
                   <h3 id="parent-name-02" class="analitics-btn__panel-title">
                     <span class="visually-hidden">Sort by country controls</span>
                     <span role="presentation">Country:</span>
                   </h3>
-                  <div class="analitics-btn__wrapper" aria-labelledby="parent-name-02">
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "country",
-                      "label": "Ukraine",
-                      "displayFlag": '',
-                      "flagName": 'ua',
-                      "checked": "checked"
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "country",
-                      "label": "Moldova",
-                      "displayFlag": '',
-                      "flagName": 'md',
-                      "checked": ""
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "country",
-                      "label": "Georgia",
-                      "displayFlag": '',
-                      "flagName": 'ge',
-                      "checked": ""
-                    })
-                    @@include('blocks/analitics-btn/analitics-btn.html', {
-                      "type": "radio",
-                      "prefix": "country",
-                      "label": "Romania",
-                      "displayFlag": '',
-                      "flagName": 'ro',
-                      "checked": ""
-                    })
-                  </div>
+                  <div class="analitics-btn__wrapper" aria-labelledby="parent-name-02">                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="country-Ukraine" type="radio" name="country" value checked>                      <label class="analitics-btn__label  btn" for="country-Ukraine">                        <span class="analitics-btn__flag" aria-hidden="true" style>                          <img src="img/ua.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">Ukraine</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="country-Moldova" type="radio" name="country" value>                      <label class="analitics-btn__label  btn" for="country-Moldova">                        <span class="analitics-btn__flag" aria-hidden="true" style>                          <img src="img/md.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">Moldova</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="country-Georgia" type="radio" name="country" value>                      <label class="analitics-btn__label  btn" for="country-Georgia">                        <span class="analitics-btn__flag" aria-hidden="true" style>                          <img src="img/ge.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">Georgia</span>                      </label>                    </div>                    <!--DEV                    @ @include('blocks/analitics-btn/analitics-btn.html', {                      "type": "checkbox",                      "prefix": "",                      "label": "",                      "checked": "",                      "displayFlag": 'display:none;',                      "flagName": ''                    })                    -->                    <div class="analitics-btn">                      <input class="analitics-btn__input  visually-hidden" id="country-Romania" type="radio" name="country" value>                      <label class="analitics-btn__label  btn" for="country-Romania">                        <span class="analitics-btn__flag" aria-hidden="true" style>                          <img src="img/ro.svg" alt width="32" height="24" loading="lazy">                        </span>                        <span class="analitics-btn__text">Romania</span>                      </label>                    </div>                  </div>
                 </section>
               </div>
             </div>
           </div>
-
           <section class="container  indicators__inner">
             <h2 class="visually-hidden">Summary table of indicators</h2>
             <div id="index-structure-table" class="indicators__table-wrapper"></div>
@@ -124,26 +88,14 @@
               <button id="btn-collapse" class="btn">Collapse the table</button>
             </div>
           </section>
-
         </article>
-
       </main>
-
     </div>
-
-    <div class="page__footer-wrapper">
-      @@include('blocks/page-footer/page-footer.html')
-    </div>
-
-  </div>
-
-  @@include('blocks/modal-form/modal-form.html')
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="page__footer-wrapper">      <footer class="container  page-footer">        <div class="row">          <div class="page-footer__logo-col">            <a href="index.html" class="logo" title="Energy Transparency Index">              <img src="img/energy-transparency-index-logo.svg" alt="Energy Transparency Index logo" width="160" height="40">            </a>          </div>          <div class="page-footer__contacts-col">            <section class="page-footer__contacts">              <h2 class="visually-hidden">Contacts</h2>              <ul class="list-nostyled  page-footer__contacts-list">                <li class="page-footer__contacts-item">                  <a href="#" class="page-footer__contacts-link" target="_blank" rel="nofollow noopener">                    <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#index-ukraine"/></svg>                    Energy Transparency Index of Ukraine                  </a>                </li>                <li class="page-footer__contacts-item">                  <a href="mailto:author@dixigroup.org" class="page-footer__contacts-link">                    <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#email"/></svg>                    author@dixigroup.org                  </a>                </li>              </ul>            </section>          </div>          <div class="page-footer__sponsors-col">            <section class="page-footer__sponsors">              <h2 class="visually-hidden">Sponsors/Partners ? </h2>              <ul class="list-nostyled  page-footer__sponsors-list">                <li class="page-footer__sponsors-item">                  <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">                    <span class="visually-hidden">Sponsor's Name</span>                    <img src="img/feu-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">                  </a>                </li>                <li class="page-footer__sponsors-item">                  <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">                    <span class="visually-hidden">Sponsor's Name</span>                    <img src="img/bst-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">                  </a>                </li>                <li class="page-footer__sponsors-item">                  <a href="#" class="page-footer__sponsors-link" title="Sponsor's Name" target="_blank" rel="nofollow noopener">                    <span class="visually-hidden">Sponsor's Name</span>                    <img src="img/dixi-group-logo.png" alt="Sponsor's Name logo" width="256" loading="lazy">                  </a>                </li>              </ul>            </section>          </div>          <div class="page-footer__text-col">            <p class="page-footer__text">              This website is made possible by the support of the American people through the United States Agency for International Development (USAID). The contents are the sole responsibility of DiXi Group and do not necessarily reflect the views of USAID or the United States Government.            </p>          </div>          <div class="page-footer__copyrights-col">            <!--DEV            @ @include('blocks/copyrights/copyrights.html')            -->            <section class="copyrights">              <h2 class="visually-hidden">Copyrights</h2>              <div class="copyrights__inner">                <div class="copyrights__owner">                  <span>© 2023 Index. All rights reserved.</span>                </div>                <div class="copyrights__dev">                  <a href="https://it-doors.com.ua" target="_blank" rel="nofollow noopener" title="IT-Doors Outsourcing, developer">                    <img src="img/it-doors-logo.svg" width="59" height="22" alt="IT-Doors logo" loading="lazy">                  </a>                </div>              </div>            </section>          </div>        </div>      </footer>    </div>
+  </div>  <!-- Modal -->  <div class="modal-form  modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">      <div class="modal-content">        <div class="modal-header">          <h4 class="modal-title  modal-form__title" id="formModalLabel">Get indicator tables</h4>          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">            <span class="visually-hidden">Закрыть модальное окно</span>            <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"/></svg>          </button>        </div>        <div class="modal-body">          <form id="getTable" action method="post">            <label class="field-text">              <span class="field-text__input-wrap">                <input class="field-text__input  field-text__input--required" type="text" name="name" value placeholder="First name">                <span class="field-text__help-text  error_name">Error</span>              </span>            </label>            <label class="field-text">              <span class="field-text__input-wrap">                <input class="field-text__input  field-text__input--required" type="text" name="surname" value placeholder="Surname">                <span class="field-text__help-text  error_surname"></span>              </span>            </label>            <label class="field-text">              <span class="field-text__input-wrap">                <input class="field-text__input  field-text__input--required" type="text" name="country" value placeholder="Country">                <span class="field-text__help-text  error_country"></span>              </span>            </label>            <label class="field-text">              <span class="field-text__input-wrap">                <input class="field-text__input" type="text" name="organiz" value placeholder="Organization">                <span class="field-text__help-text  error_organiz"></span>              </span>            </label>            <label class="field-text">              <span class="field-text__input-wrap">                <input class="field-text__input  field-text__input--required" type="email" name="email" value placeholder="E-mail">                <span class="field-text__help-text  error_email"></span>              </span>            </label>            <div class="field-checkbox__wrapper" style>              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox" name="year2020" value>                  <span class="field-checkbox__name-text">Table for 2020</span>                </label>              </div>              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox" name="year2021" value>                  <span class="field-checkbox__name-text">Table for 2021</span>                </label>              </div>              <div class="field-checkbox">                <label class="field-checkbox__name">                  <input class="field-checkbox__input" type="checkbox" name="year2022" value>                  <span class="field-checkbox__name-text">Table for 2022</span>                </label>              </div>            </div>          </form>        </div>        <div class="modal-footer">          <button type="submit" class="btn"><span>Send</span></button>        </div>      </div>    </div>  </div>  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/nested.tables.min.js"></script>
-
-  @@include('_include/page_bottom.html')
-
+  <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
+  <script src="js/script.min.js"></script>
   <script>
     var dataInJson =
       [
@@ -172,7 +124,6 @@
                     "Загальна_Rating":"3"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -182,7 +133,6 @@
                     "Загальна_Rating":"3"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -192,7 +142,6 @@
                     "Загальна_Rating":"3"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -202,7 +151,6 @@
                     "Загальна_Rating":"3"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -212,7 +160,6 @@
                     "Загальна_Rating":"3"
                   },
                   "kids":[
-
                   ]
                 }
               ]
@@ -233,7 +180,6 @@
                     "Загальна_Rating":"2"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -243,7 +189,6 @@
                     "Загальна_Rating":"2"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -253,7 +198,6 @@
                     "Загальна_Rating":"2"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -263,7 +207,6 @@
                     "Загальна_Rating":"не визначено"
                   },
                   "kids":[
-
                   ]
                 }
               ]
@@ -303,7 +246,6 @@
                         "Загальна_Rating":"3.50"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -312,7 +254,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -321,7 +262,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -330,7 +270,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -339,7 +278,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -348,7 +286,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -357,7 +294,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -366,7 +302,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -375,7 +310,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -384,7 +318,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -393,7 +326,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -402,7 +334,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -411,7 +342,6 @@
                         "Загальна_Rating":"1.75"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -420,7 +350,6 @@
                         "Загальна_Rating":"1.50"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -429,7 +358,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -438,7 +366,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -447,7 +374,6 @@
                         "Загальна_Rating":"1.75"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -456,7 +382,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -465,7 +390,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -474,7 +398,6 @@
                         "Загальна_Rating":"3.50"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -483,7 +406,6 @@
                         "Загальна_Rating":"1.75"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -492,7 +414,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     }
                   ]
@@ -512,7 +433,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -521,7 +441,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -530,7 +449,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     }
                   ]
@@ -550,7 +468,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -559,7 +476,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -568,7 +484,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -577,7 +492,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -586,7 +500,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -595,7 +508,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -604,7 +516,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -613,7 +524,6 @@
                         "Загальна_Rating":"2.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -622,7 +532,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -631,7 +540,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -640,7 +548,6 @@
                         "Загальна_Rating":"2.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -649,7 +556,6 @@
                         "Загальна_Rating":"2.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -658,7 +564,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -667,7 +572,6 @@
                         "Загальна_Rating":"2.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -676,7 +580,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -685,7 +588,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -694,7 +596,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -703,7 +604,6 @@
                         "Загальна_Rating":"2.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -712,7 +612,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -721,7 +620,6 @@
                         "Загальна_Rating":"0.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -730,7 +628,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -739,7 +636,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     },
                     {
@@ -748,7 +644,6 @@
                         "Загальна_Rating":"4.00"
                       },
                       "kids":[
-
                       ]
                     }
                   ]
@@ -764,7 +659,6 @@
                 "Characteristic":"Неприйнятна прозорість"
               },
               "kids":[
-
               ]
             }
           ]
@@ -788,13 +682,11 @@
                     "name":"Wat Dakota"
                   },
                   "kids":[
-
                   ]
                 }
               ]
             },
             {
-
             }
           ]
         },
@@ -807,7 +699,6 @@
             "Characteristic":"недостатня прозорість"
           },
           "kids":[
-
           ]
         },
         {
@@ -819,7 +710,6 @@
             "Characteristic":"середня прозорість"
           },
           "kids":[
-
           ]
         },
         {
@@ -831,7 +721,6 @@
             "Characteristic":"неприйнятна прозорість"
           },
           "kids":[
-
           ]
         },
         {
@@ -843,7 +732,6 @@
             "Characteristic":"середня прозорість"
           },
           "kids":[
-
           ]
         },
         {
@@ -870,7 +758,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -879,7 +766,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -888,7 +774,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -897,7 +782,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -906,7 +790,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -915,7 +798,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -924,7 +806,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 },
                 {
@@ -933,7 +814,6 @@
                     "Загальна_Rating":"11"
                   },
                   "kids":[
-
                   ]
                 }
               ]
@@ -947,14 +827,11 @@
                 "Characteristic":"середня прозорість"
               },
               "kids":[
-
               ]
             }
           ]
         }
       ];
-
-
       var settings = {
         iDisplayLength: 50,
         bLengthChange: false,
@@ -963,15 +840,12 @@
         bSort: false,
         bInfo: false
       };
-
       var table = new nestedTables.TableHierarchy(
         'index-structure-table',
         dataInJson,
         settings
       );
-
       table.initializeTableHierarchy();
-
       var tableEle = document.querySelector('#index-structure-table .table');
       tableEle.addEventListener('onShowChildHierarchy', function(e) {
         //console.log(e);
@@ -980,6 +854,5 @@
         //console.log(e);
       });
   </script>
-
 </body>
 </html>

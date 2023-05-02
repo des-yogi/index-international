@@ -9,7 +9,6 @@
 @import '../../node_modules/bootstrap/scss/_mixins';
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
-@import '../../node_modules/bootstrap/scss/_dropdown';
 @import '../../node_modules/bootstrap/scss/_modal';
 @import '../../node_modules/swiper/swiper-bundle.css';
 @import './src/blocks/btn/btn.scss';
@@ -36,7 +35,6 @@
 @import './src/blocks/download-index/download-index.scss';
 @import './src/blocks/global-map/global-map.scss';
 @import './src/blocks/donors/donors.scss';
-@import './src/blocks/partners/partners.scss';
 @import './src/blocks/copyrights/copyrights.scss';
 @import './src/blocks/modal-form/modal-form.scss';
 @import './src/blocks/faq/faq.scss';
@@ -44,4 +42,6 @@
 @import './src/blocks/analitics/analitics.scss';
 @import './src/blocks/analitics-btn/analitics-btn.scss';
 @import './src/blocks/indicators/indicators.scss';
+@import './src/blocks/methodology/methodology.scss';
+@import './src/blocks/page-404/page-404.scss';
 @import './src/scss/print.scss';

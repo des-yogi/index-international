@@ -1,8 +1,22 @@
 .download-index {
-  padding-top: 64px;
-  padding-bottom: 64px;
 
   $block-name:                &; // #{$block-name}__element
+
+  & + & {
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid $border-color;
+  }
+
+  &__wrapper {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &--list {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+  }
 
   &__inner {
 
@@ -51,10 +65,6 @@
       flex: 0 0 690px;
       //width: 690px;
     }
-  }
-
-  &__title {
-
   }
 
   &__intro {
