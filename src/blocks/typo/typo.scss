@@ -241,14 +241,6 @@ dt {
 
 dd {
   margin-left: 0;
-
-  @media (min-width: $screen-sm) {
-    margin-left: 1.5rem;
-  }
-
-  & + dt {
-    margin-top: 0.5em;
-  }
 }
 
 // samp,
