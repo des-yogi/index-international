@@ -62,6 +62,7 @@
     "./node_modules/bootstrap/js/dist/util/focustrap.js",
     "./node_modules/bootstrap/js/dist/util/component-functions.js",
     "./node_modules/bootstrap/js/dist/modal.js",
+    "./node_modules/bootstrap/js/dist/collapse.js",
     "./node_modules/swiper/swiper-bundle.min.js"
   ],
   "addJsAfter": [
